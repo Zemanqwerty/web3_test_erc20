@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPHERE ilo projects</title>
+    <link rel="stylesheet" href="css/cur_project.css">
+</head>
+<body>
+    <header>
+        <div class="header_top_container_wrapper">
+        <div class="header_block_wrapper">
+            <div class="header_block">
+                <div class="logo">
+                    <div class="logo_image">
+    
+                    </div>
+                    <a href="/" class="logo_text" style="text-decoration: none; color: black;">
+                        <b>SPHERE ilo</b>
+                    </a>
+                </div>
+                
+                <div class="header_block_menu">
+                    
+                </div>
+
+                <div id="LoginButton" class="header_connect_wallet">
+                    <p class="connect_wallet_p" id="walletAddressText">connect wallet</p>
+                    <img src="img/metamask_logo.png" alt="" class="metamask_header_logo">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_wrapper">
+            <div class="main_block">
+                <div class="main_top_block">
+                    <div class="project_name_block">
+                        <p class="p_name" id="project">
+                            {{ project[0] }}
+                        </p>
+                    </div>
+                    <div class="project_site_block">
+                        <a href="http://{{ project[1] }}" class="p_site" id="p_site">
+                            {{ project[1] }}
+                        </a>
+                    </div>
+                    <div class="coin_info_block">
+                        <div class="coin_info">
+                            <div class="coin_count_block">
+                                <p class="coin_count">
+                                    Кол-во токенов: {{ project[4] }} {{ project[0] }}
+                                </p>
+                            </div>
+                            <div class="coin_price_block">
+                                <p class="coin_price">
+                                    Цена токена: <p class="coin_price_usd_cur" id="coin_price" style="padding-left: 5px;">{{ project[5] }}</p> USD.
+                                    <p class="eth_price">
+                                        <p class="eth_name" style="padding-left: 40px;">
+                                            Курс ETH:
+                                        </p>
+                                        <p class="eth_price" id="cur_eth_price" style="padding-left: 5px;">
+                                            {{ eth_price }}
+                                        </p>
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="smart_contract_block">
+                            <p class="smart_contract" id="smrt_contract">
+                                {{ project[3] }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_bottom_block">
+                    <div class="bottom_left_block">
+                        <div class="buy_form">
+                            <input type="number" class="coin_count_input" placeholder="Кол-во токенов" id="coins_count">
+                            <p class="json_response" id="json_respose"></p>
+                            <button  class="buy_button" onclick="send_transaction()">Купить</button>
+                        </div>
+                    </div>
+                    <div class="bottom_right_block">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/send_transaction_script.js"></script>
+</body>
+</body>
+</html>

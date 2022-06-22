@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="css/projects_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_top_container_wrapper">
+            <div class="header_top_container">
+                <div class="top_container_price">
+                    <ul class="top_price_list">
+                        <li class="top_price_list_element">
+                            <div class="top_price_name">
+                                BTC - 
+                            </div>
+                            <div class="top_price_value">
+                                {{ btc_price }}
+                            </div>
+                        </li>
+                        <li class="top_price_list_element">
+                            <div class="top_price_name">
+                                ETH - 
+                            </div>
+                            <div class="top_price_value">
+                                {{ eth_price }}
+                            </div>
+                        </li>
+                        <li class="top_price_list_element">
+                            <div class="top_price_name">
+                                SOL - 
+                            </div>
+                            <div class="top_price_value">
+                                {{ sol_price }}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                {% if user == None %}
+                <div class="top_container_log">
+                    <div class="top_container_login">
+                        <a href="/autz" class="top_login">
+                            Вход
+                        </a>
+                    </div>
+                    <div class="top_container_registration">
+                        <a href="/create_new_account" class="top_registration">
+                            Регистрация
+                        </a>
+                    </div>
+                </div>
+                {% else %}
+                <div class="top_container_log">
+                    <div class="top_container_login">
+                        <a href="/api/logout" class="logout_user" style="font-size: 12px; color: rgb(116, 116, 116);">выйти</a>
+                        <a href="/account" class="top_login">
+                            {{ user }}
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+                
+            </div>
+        </div>
+        <hr class="header_middle_hr">
+        <div class="header_block_wrapper">
+            <div class="header_block">
+                <div class="header_left_side_block">
+                    <div class="logo">
+                        <div class="logo_image">
+        
+                        </div>
+                        <a href="/" class="logo_text" style="text-decoration: none; color: black;">
+                            <b>SPHERE ilo</b>
+                        </a>
+                    </div>
+    
+                    <div class="search_block">
+                        <input type="text" id="get_request_value" class="search_project_form" placeholder="Search ilo...">
+                        <div class="send_search_request" onclick="sendGetRequest()">
+                            <div class="mag_css_build"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header_accounts_block">
+                    <!-- <div class="header_block_menu">
+                        <ul class="header_menu">
+                            {% if user != None %}
+                            <li class="header_menu_element">
+                                <a href="/account" class="header_menu_element-a">
+                                    My account
+                                </a>
+                            </li>
+                            {% else %}
+    
+                            {% endif %}
+                        </ul>
+                    </div> -->
+    
+                    <div id="LoginButton" class="header_connect_wallet">
+                        <p class="connect_wallet_p" id="walletAddressText">connect wallet</p>
+                        <img src="img/metamask_logo.png" alt="" class="metamask_header_logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_wrapper">
+            {% if projects == None or projects == [] %}
+                No one project(
+            {% else %}
+            {% for project in projects %}
+            <div class="project_block">
+                <div class="project_top_information">
+                    <!-- <a href="/project?project={{ project[1] }}" class="project_name">
+                        {{ project[1] }}
+                        <hr class="hr_name">
+                    </a> -->
+                    <a href="/{{ project[1] }}" class="project_name">
+                        {{ project[1] }}
+                        <hr class="hr_name">
+                    </a>
+                    <div class="project_site">
+                        <p class="price">Price: {{ project[4] }} USDT</p>
+                        <a href="http://{{ project[2] }}" class="site">{{ project[2] }}</a>
+                    </div>
+                </div>
+                <div class="progress_bar">
+                    {% for procent in procents %}
+                        {% if procent['id'] == project[0] %}
+                        <div class="bar" style="width: {{ procent['procent'] }}%;">
+                            <p class="progress_info">
+                                {{ project[6] }} coins
+                            </p>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="project_bottom_information">
+                    <div class="project_smart_contract">
+                        {{ project[3] }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {{ message }}
+        </div>
+    </main>
+    <script src="js/login_wallet_script.js"></script>
+</body>
+</html>

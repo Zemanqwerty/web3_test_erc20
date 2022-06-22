@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 65px;
+}
+
+.header_top_container_wrapper{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_top_container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_container_price{
+    width: 50%;
+    height: 100%;
+}
+
+.top_price_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top_price_list_element{
+    display: flex;
+    list-style-type: none;
+    font-size: 15px;
+    padding-right: 30px;
+}
+
+.top_price_name{
+    color: rgb(116, 116, 116);
+    padding-right: 5px;
+}
+
+.top_price_value{
+    color: rgb(72 208 110);
+}
+
+.top_container_log{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top_login, .top_registration{
+    width: auto;
+    height: 100%;
+    padding-left: 20px;
+    color:rgb(116, 116, 116)
+}
+
+
+
+
+
+.header_middle_hr{
+    border-top: 2px solid black;
+    opacity: 0.1;
+}
+
+.header_block_wrapper{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_block{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Akshar', sans-serif;
+}
+
+.logo_text{
+    font-size: 25px;
+}
+
+.header_connect_wallet{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-family: 'Akshar', sans-serif;
+    font-size: 17px;
+}
+
+.connect_wallet_p{
+    padding-right: 15px;
+}
+
+.metamask_header_logo{
+    height: 50%;
+}
+
+.header_menu_element{
+    display: inline;
+    list-style-type: none;
+}
+
+.header_menu_element-a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Akshar', sans-serif;
+    margin-right: 17px;
+}
+
+
+
+
+main{
+    width: 100%;
+    min-height: calc(100vh - 65px);
+    height: auto;
+    background-color: rgb(246, 245, 245);
+    display: flex;
+    justify-content: center;
+}
+
+.main_wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: auto;
+    min-height: 200px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+.main_left_side_block{
+    width: 35%;
+    height: 400px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 20px;
+    margin: 10px;
+    -webkit-box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+}
+
+.balance_information{
+    width: 100%;
+    height: 80%;
+    padding: 15px;
+}
+
+.balance{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.balance_element{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.c_name{
+    font-size: 30px;
+    color: rgb(49, 49, 49);
+}
+
+
+
+
+
+.add_new_project{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new_project_button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.main_right_side_block{
+    width: 60%;
+    height: auto;
+    
+    background-color: rgb(246, 246, 246);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+}
+
+.transactions_title{
+    text-align: center;
+    font-size: 35px;
+}
+
+.transaction_block{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 4px 8px 5px rgba(34, 60, 80, 0.2);
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    display: flex;
+}
+
+.project_name, .project_coins_count{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    font-size: 20px;
+}

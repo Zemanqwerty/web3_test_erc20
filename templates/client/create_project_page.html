@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPHERE create new ILO</title>
+    <link rel="stylesheet" href="css/create_project.css">
+</head>
+<body>
+    <main>
+        <div class="form">
+            <div class="main_information">
+                <p class="company_name">
+                    SPHERE
+                </p>
+                <p class="page_name">
+                    новое ILO
+                </p>
+            </div>
+            <div class="form_inputs">
+                <input type="text" id="project_name" class="input_information" placeholder="*Название проекта">
+                <br>
+                <input type="text" id="project_site" class="input_information" placeholder="*Сайт проекта">
+                <br>
+                <input type="text" id="smart_contract" class="input_information" placeholder="*Смарт-контракт проекта">
+                <br>
+                <input type="number" id="coin_count" class="input_information" placeholder="*Кол-во токенов">
+                <br>
+                <input type="number" id="coin_price" class="input_information" placeholder="*Цена токена">
+                <br>
+                <input type="submit" id="send_information" onclick="createNewProject()" class="send_information" value="Отправить">
+                <div class="alert_information" id="alertText">
+    
+                </div>
+            </div>
+        </div>
+        <div class="other_side">
+            <canvas id="c"></canvas>
+        </div>
+    </main>
+
+    <script src="js/main_api.js"></script>
+    <script src="js/sphere_script.js"></script>
+</body>
+</html>

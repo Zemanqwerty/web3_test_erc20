@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(208, 208, 209);
+}
+
+.form{
+    width: 40%;
+    height: 90%;
+    background-color: white;
+    border-radius: 0 25px 25px 0;
+}
+
+.form_inputs{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* .input_information{
+    width: 80%;
+    height: 20px;
+    margin-bottom: 20px;
+} */
+
+.input_information{
+    width: 80%;
+    height: 25px;
+    padding: 17px;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+    transition: 0.2s;
+    margin-top: 5px;
+}
+
+.input_information:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+/* 
+.send_information{
+    width: 50%;
+} */
+
+.send_information{
+    width: 30%;
+    height: 35px;
+    background-color: rgb(55, 55, 55);
+    color: aliceblue;
+    border: none;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+    transition: 0.2s;
+    font-size: 17px;
+    margin-top: -10px;
+}
+
+.send_information:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.main_information{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-top: 30px;
+}
+
+.company_name{
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.alert_information{
+    width: 80%;
+    height: 20px;
+    font-size: 14px;
+    color:red;
+    text-align: center;
+}
+
+.another_ref{
+    margin: 0 5px 0 5px;
+}
+
+.company_name{
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.other_side{
+    width: 50%;
+    height: 95%;
+}
+
+#c
+{
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

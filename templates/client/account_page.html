@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My account</title>
+    <link rel="stylesheet" href="css/account_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_top_container_wrapper">
+        <div class="header_block_wrapper">
+            <div class="header_block">
+                <div class="logo">
+                    <div class="logo_image">
+    
+                    </div>
+                    <a href="/" class="logo_text" style="text-decoration: none; color: black;">
+                        <b>SPHERE ilo</b>
+                    </a>
+                </div>
+                
+                <div class="header_block_menu">
+                    
+                </div>
+
+                <div id="LoginButton" class="header_connect_wallet">
+                    <p class="connect_wallet_p" id="walletAddressText">connect wallet</p>
+                    <img src="img/metamask_logo.png" alt="" class="metamask_header_logo">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main_wrapper">
+            <div class="main_left_side_block">
+                <div class="balance_information">
+                    <div class="balance">
+                        <div class="balance_element" style="display: flex;">
+                            <p class="c_name">ETH:</p> <p id="eth_balance_value" style="font-size: 30px; padding-left: 20px;">0</p>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="add_new_project">
+                    <a href="/create_new_project" class="new_project_button">
+                        Отпраьте свой проект на модерацию
+                    </a>
+                </div>
+            </div>
+            <div class="main_right_side_block">
+                <div class="transactions_title">
+                    История транзакций
+                </div>
+                {% if transactions_list %}
+                {% for transaction in transactions_list %}
+                <div class="transaction_block">
+                    <div class="project_name">
+                        {{ transaction[0] }}:
+                    </div>
+
+                    <div class="project_coins_count">
+                        {{ transaction[1] }} coins
+                    </div>
+                </div>
+                {% endfor %}
+                {% else %}
+
+                {% endif %}
+            </div>
+        </div>
+    </main>
+    <!-- <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script> -->
+    <script src="js/login_wallet_script.js"></script>
+    <script src="js/get_balance_script.js"></script>
+</body>
+</html>

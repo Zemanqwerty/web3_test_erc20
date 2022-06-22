@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PANEL</title>
+    <link rel="stylesheet" href="admin_css/admin_main_page_page.css">
+</head>
+<body>
+    <header>
+        <div class="header_block_wrapper">
+            <div class="header_block">
+                <p class="page_name">
+                    SPHERE admin panel (Активные ILO)
+                </p>
+            </div>
+        </div>
+    </header>
+    <div class="nav_menu">
+        <a href="/admin/main_page" class="main_page">
+            Модерация проектов
+        </a>
+        <a href="/admin/acive_project_page" class="active_p_page cur_page">
+            Активные ILO
+        </a>
+        <a href="/admin/send_tocens" class="active_p_page">
+            Транзакции в ожидании
+        </a>
+    </div>
+    <main>
+        <div class="main_block_wrapper">
+            {% for project in project_list %}
+            <div class="main_block_element" style="height: 140px;">
+                <div class="project_block_element">
+                    <div class="project_info">
+                        <div class="project_name">{{ project[1] }}</div>
+                        <a href="https://{{ project[2] }}" class="project_link">{{ project[2] }}</a>
+                    </div>
+                    <div class="button_block">
+                        <div class="reject_button" onclick="updateStatus()" id="{{ project[0] }}">Завершить</div>
+                    </div>
+                </div>
+                <div class="coin_info_block" style="padding: 5px;">
+                    {{ project[3] }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    <script src="admin_js/active_projects_scripts.js"></script>
+</body>
+</html>

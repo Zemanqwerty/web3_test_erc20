@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input {outline:none;}
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 20px 20px;
+}
+
+.header_left_side_block{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_top_container_wrapper{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_top_container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_container_price{
+    width: 50%;
+    height: 100%;
+}
+
+.top_price_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top_price_list_element{
+    display: flex;
+    list-style-type: none;
+    font-size: 17px;
+    padding-right: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.top_price_name{
+    color: rgb(116, 116, 116);
+    padding-right: 5px;
+}
+
+.top_price_value{
+    color: rgb(72 208 110);
+}
+
+.top_container_log{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.top_login, .top_registration{
+    width: auto;
+    font-size: 17px;
+    height: 100%;
+    padding-left: 20px;
+    color:rgb(116, 116, 116)
+}
+
+
+
+
+
+.header_middle_hr{
+    border-top: 2px solid black;
+    opacity: 0.3;
+}
+
+.header_block_wrapper{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    /* -webkit-box-shadow: 0px 4px 0px 5px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 4px 0px 5px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 4px 0px 5px rgba(34, 60, 80, 0.2); */
+}
+
+.header_block{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.logo_text{
+    font-size: 35px;
+}
+
+.header_connect_wallet{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-family: 'Akshar', sans-serif;
+    font-size: 17px;
+}
+
+.connect_wallet_p{
+    padding-right: 15px;
+    font-size: 17px;
+    font-family: 'Akshar', sans-serif;
+}
+
+.metamask_header_logo{
+    height: 60%;
+}
+
+.header_menu_element{
+    display: inline;
+    list-style-type: none;
+}
+
+.header_menu_element-a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Akshar', sans-serif;
+    margin-right: 17px;
+}
+
+.header_accounts_block{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search_block{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_project_form{
+    font-size: 17px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    width: 50%;
+    padding: 9px;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(230, 234, 239);
+    /* -webkit-box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 11px 4px rgba(34, 60, 80, 0.2); */
+    /* border: 1px solid rgba(0, 0, 0, 0.51); */
+}
+
+.send_search_request{
+    cursor: pointer;
+    height: 38.5px;
+    width: 38.5px;
+    padding: 9px;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    /* border: 1px solid rgba(0, 0, 0, 0.51); */
+    background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+}
+
+.search_mag_glass{
+    width: 17px;
+    padding: 9px;
+}
+
+.mag_css_build {
+    position: relative;
+    
+    width: 17px;
+    height: 17px; 
+    
+    box-sizing: border-box;
+    
+    border: 3px solid rgb(230, 234, 239);
+    border-radius: 50%;
+}
+
+.mag_css_build:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    width: 8px;
+    height: 3px;
+    background-color: rgb(230, 234, 239);
+    
+    border-radius: 0 7.5px 7.5px 0;
+    
+    transform-origin: 0 50%;
+    transform: translateX(100%) rotate(45deg);
+}
+
+
+
+
+
+
+
+
+main{
+    width: 100%;
+    min-height: calc(100vh - 130px);
+    height: auto;
+    background-color: rgb(230, 234, 239);
+    display: flex;
+    justify-content: center;
+}
+
+.main_wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: auto;
+    min-height: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.project_block{
+    width: 300px;
+    height: 200px;
+    /* background-color: rgb(221, 221, 221); */
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 20px;
+    -webkit-box-shadow: 6px 6px 0px 1px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 6px 6px 0px 1px rgba(0, 0, 0, 0.51);
+    box-shadow: 6px 6px 0px 1px rgba(0, 0, 0, 0.51);
+    border: 1px solid rgba(0, 0, 0, 0.51);
+    padding: 7px;
+    transition: 0.2s;
+    font-family: 'Lato', sans-serif;
+}
+
+.project_block:hover{
+    transform: scale(0.98);
+    transition: 0.2s;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.51);
+-moz-box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.51);
+box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.51);
+}
+
+.project_top_information{
+    width: 100%;
+    height: 65%;
+}
+
+.project_bottom_information{
+    width: 100%;
+    height: 20%;
+}
+
+.project_name{
+    width: 100%;
+    height: 60%;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+}
+
+.hr_name{
+    border-radius: 5px;
+    border: none;
+    height: 5px;
+    background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+}
+
+.project_site{
+    width: 100%;
+    height: 40%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.site{
+    color: black;
+}
+
+.price{
+    font-size: 18px;
+    font-family: 'Akshar', sans-serif;
+}
+
+.project_smart_contract{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end;
+    color: rgb(113, 113, 113);
+}
+
+.progress_bar{
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(230, 234, 239);
+}
+
+.bar{
+    height: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+}
+
+.progress_info{
+    color: white;
+    text-align: center;
+    width: 286px;
+    text-shadow: 1px 1px 0 #7A7A7A;
+}

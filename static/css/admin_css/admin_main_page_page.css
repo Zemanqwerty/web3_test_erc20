@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.header_block_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_block{
+    width: 80%;
+    height: 90%;
+}
+
+.page_name{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 50px;
+    color: rgb(82, 82, 82);
+}
+
+main{
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 240px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_block_wrapper{
+    width: 80%;
+    height: auto;
+    min-height: calc(100vh - 240px);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+/* .main_block_element{
+    width: 40%;
+    height: auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+} */
+
+.project_block_element{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coin_info_block{
+    width: 100%;
+    height: 100px;
+}
+
+.main_block_element{
+    width: 40%;
+    height: auto;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-color: white;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.project_info{
+    width: 50%;
+    /* display: flex;
+    align-items: center; */
+}
+
+.project_name, .project_link{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.buttons_block{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.accept_button, .reject_button{
+    width: 90%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.accept_button{
+    background-color: rgb(46, 172, 65);
+}
+
+.reject_button{
+    background-color: brown;
+}
+
+.nav_menu{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.main_page, .active_p_page{
+    color: rgb(47, 47, 47);
+    text-decoration: none;
+}
+
+.cur_page{
+    border-bottom: 2px solid black;
+}
+
+.coin_info{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+}
+
+.top_project_info{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.project_site{
+    padding-left: 30px;
+}
+
+.coin_price_information{
+    padding-left: 40px;
+}

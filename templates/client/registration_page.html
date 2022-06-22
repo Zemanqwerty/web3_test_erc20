@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPHERE create new account</title>
+    <link rel="stylesheet" href="css/test_css.css">
+</head>
+<body>
+    <main>
+        <div class="form">
+            <div class="top_form">
+                <div class="main_information">
+                    <p class="company_name">
+                        SPHERE
+                    </p>
+                    <p class="page_name">
+                        регистрация
+                    </p>
+                </div>
+                <div class="cur_information">
+                    *Имя мользователя
+                </div>
+                <input type="text" id="send_login" class="input_form_element">
+                <div class="cur_information_bottom">
+                    *Пароль
+                </div>
+                <input type="password" id="send_password" class="input_form_element">
+        
+                <input type="button" class="input_button_element" onclick="sendRegistrationData()" value="Регистрация">
+    
+                <div class="alert_information" id="alertText">
+    
+                </div>
+            </div>
+            <div class="bottom_form">
+                Уже зарегистрированы? <a href="/autz" class="another_ref">Войдите</a> в свой аккаунт.
+            </div>
+        </div>
+        <div class="other_side">
+            <canvas id="c"></canvas>
+        </div>
+    </main>
+
+    <script src="js/main_api.js"></script>
+    <script src="js/sphere_script.js"></script>
+</body>
+</html>
